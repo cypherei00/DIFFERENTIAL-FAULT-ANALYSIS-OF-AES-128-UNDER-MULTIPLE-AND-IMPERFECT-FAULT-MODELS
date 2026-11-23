@@ -1,4 +1,4 @@
-# AES-128 Differential Fault Analysis
+# DIFFERENTIAL FAULT ANALYSIS OF AES 128 UNDER MULTIPLE AND IMPERFECT FAULT MODELS
 
 Software study of differential fault analysis on AES-128 under multiple-byte and imperfect fault models. Faults are transient XOR faults injected in round 9, after ShiftRows and before MixColumns. Nothing in this folder is a physical fault-injection campaign.
 
