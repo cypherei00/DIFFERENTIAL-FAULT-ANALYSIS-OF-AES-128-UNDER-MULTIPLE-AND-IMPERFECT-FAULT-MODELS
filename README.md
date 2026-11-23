@@ -16,8 +16,6 @@ AES_DFA/
 ├── run_all.py
 ├── run_all.bat
 ├── run_all.sh
-├── README_FIRST.txt
-├── README_RUN_FIRST.txt
 ├── source/
 │   ├── python/          experiment scripts
 │   ├── cpp/             C++ sources and extensionless binaries
