@@ -1,4 +1,4 @@
-# AES-128 Differential Fault Analysis
+# DIFFERENTIAL FAULT ANALYSIS OF AES 128 UNDER MULTIPLE AND IMPERFECT FAULT MODELS
 
 Software study of differential fault analysis on AES-128 under multiple-byte and imperfect fault models. Faults are transient XOR faults injected in round 9, after ShiftRows and before MixColumns. Nothing in this folder is a physical fault-injection campaign.
 
@@ -16,8 +16,6 @@ AES_DFA/
 ├── run_all.py
 ├── run_all.bat
 ├── run_all.sh
-├── README_FIRST.txt
-├── README_RUN_FIRST.txt
 ├── source/
 │   ├── python/          experiment scripts
 │   ├── cpp/             C++ sources and extensionless binaries
