@@ -1,0 +1,2 @@
+PHASE VII STATUS: PART A PARTIALLY VALIDATED; PART B NOT COMPLETE.
+The one-pair candidate generator is mathematically consistent for the tested (0,1,2) row triple and retains the true K10 tuple. The first filtering run retained the true key but did not isolate it after three pairs (224 candidates remained). Full recovery and all four row triples have not been demonstrated.

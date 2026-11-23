@@ -1,0 +1,37 @@
+{
+  "title": "AES-128 Differential Fault Analysis under Multiple and Imperfect Fault Models",
+  "organization": "Four consolidated research phases",
+  "phase_structure": [
+    {
+      "phase": 1,
+      "name": "Foundations and baseline",
+      "former_internal_stages": "II-IV"
+    },
+    {
+      "phase": 2,
+      "name": "Known-support multi-fault recovery",
+      "former_internal_stages": "V-VII and IX, plus known-support integration"
+    },
+    {
+      "phase": 3,
+      "name": "Blind support identification",
+      "former_internal_stages": "VIII and X-XIV"
+    },
+    {
+      "phase": 4,
+      "name": "Multi-event recovery and comparative evaluation",
+      "former_internal_stages": "XV-XVI"
+    }
+  ],
+  "main_report": "reports/AES_DFA_Full_Research_Paper_Four_Phases.docx",
+  "source_layout": {
+    "python": "source/python",
+    "cpp": "source/cpp",
+    "shell": "source/shell",
+    "csv": "results/csv",
+    "json": "results/json",
+    "figures": "figures",
+    "docs": "docs"
+  },
+  "note": "Original source basenames retained to preserve imports and reproducibility."
+}

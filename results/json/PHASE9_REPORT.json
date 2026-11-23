@@ -1,0 +1,25 @@
+{
+  "seed": 20261117,
+  "trials_per_pattern": 8,
+  "total_trials": 16,
+  "patterns": {
+    "2+1": {
+      "trials": 8,
+      "successful_all_affected_groups": 8,
+      "success_rate": 1.0
+    },
+    "1+1+1": {
+      "trials": 8,
+      "successful_all_affected_groups": 8,
+      "success_rate": 1.0
+    }
+  },
+  "runtime_seconds": 6.180166403999465,
+  "scope": [
+    "Three faults distributed across two or three AES state columns.",
+    "Known per-column row support and affected columns are supplied to the recovery stage.",
+    "Per-column 1- and 2-byte DFA models recover the affected column key groups.",
+    "Unaffected columns are not recovered; complete 128-bit master-key recovery is not claimed.",
+    "Software fault injection only."
+  ]
+}

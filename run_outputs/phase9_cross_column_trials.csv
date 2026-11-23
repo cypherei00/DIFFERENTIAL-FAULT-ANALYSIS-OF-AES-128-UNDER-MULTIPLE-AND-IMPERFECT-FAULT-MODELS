@@ -1,0 +1,17 @@
+pattern,trial,affected_columns,fault_distribution,all_affected_column_groups_recovered,total_column_pair_intersections,mean_candidates_per_intersection
+2+1,1,2,"c0:rows1,3;c2:rows1",1,5,13140
+2+1,2,2,"c1:rows0,3;c0:rows2",1,4,16504.5
+2+1,3,2,"c0:rows0,3;c2:rows2",1,5,12996.2
+2+1,4,2,"c2:rows2,3;c3:rows3",1,5,13034.6
+2+1,5,2,"c0:rows1,2;c3:rows2",1,4,16132.5
+2+1,6,2,"c2:rows0,2;c1:rows3",1,5,13018.6
+2+1,7,2,"c0:rows1,2;c2:rows1",1,5,12845.8
+2+1,8,2,"c0:rows1,2;c1:rows0",1,5,13262.2
+1+1+1,1,3,c2:rows0;c1:rows1;c3:rows2,1,6,120.5
+1+1+1,2,3,c1:rows3;c0:rows2;c3:rows0,1,6,123.16666666666667
+1+1+1,3,3,c2:rows3;c0:rows0;c1:rows0,1,6,123.16666666666667
+1+1+1,4,3,c0:rows3;c3:rows0;c1:rows0,1,6,125.83333333333333
+1+1+1,5,3,c0:rows1;c3:rows2;c2:rows1,1,6,131.16666666666666
+1+1+1,6,3,c0:rows1;c2:rows2;c3:rows3,1,6,123.16666666666667
+1+1+1,7,3,c3:rows0;c1:rows3;c0:rows1,1,6,120.5
+1+1+1,8,3,c2:rows1;c3:rows3;c1:rows2,1,6,123.16666666666667

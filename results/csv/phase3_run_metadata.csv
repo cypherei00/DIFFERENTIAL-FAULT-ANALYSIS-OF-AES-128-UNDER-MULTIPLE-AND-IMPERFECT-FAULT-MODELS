@@ -1,0 +1,8 @@
+parameter,value
+trials,30
+pair_counts_per_column,1;2;3;4;5;6;8;10;12
+master_seed,20261117
+fault_model,"single row-0 byte XOR fault, round 9, after ShiftRows before MixColumns"
+magnitude_handling,unknown to attacker; candidate search enumerates epsilon 1..255
+key,fresh random AES-128 key per trial
+plaintext,fresh random plaintext for each faulty pair

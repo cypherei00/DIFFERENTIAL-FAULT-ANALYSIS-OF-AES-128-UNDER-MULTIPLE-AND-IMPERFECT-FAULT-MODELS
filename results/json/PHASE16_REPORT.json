@@ -1,0 +1,267 @@
+{
+  "phase": "XVI",
+  "title": "Comparative Evaluation of AES Differential Fault Analysis Approaches",
+  "source_artifacts": [
+    "phase3_trial_summary.csv",
+    "phase3_aggregate_results.csv",
+    "phase7_cpp_trial_summary.csv",
+    "phase7_cpp_column_trials.csv",
+    "phase9_cross_column_trials.csv",
+    "PHASE9_REPORT.json",
+    "phase14_blind_trials.csv",
+    "PHASE14_REPORT.json",
+    "phase15_multi_event_trials.csv",
+    "PHASE15_REPORT.json"
+  ],
+  "comparisons": [
+    {
+      "approach": "Conventional single-byte DFA (Phase III)",
+      "trials": 30,
+      "successes": 30,
+      "success_rate_percent": 100.0,
+      "success_criterion": "Full AES-128 master key recovered by <=12 pairs",
+      "mean_pairs": 2.1,
+      "mean_runtime_seconds": 0.34476728966666664,
+      "support_known": "Yes",
+      "scope": "Controlled single-byte faults; row-0/column support known; full key."
+    },
+    {
+      "approach": "Known-support three-byte DFA (Phase VII)",
+      "trials": 120,
+      "successes": 120,
+      "success_rate_percent": 100.0,
+      "success_criterion": "Full AES-128 master key recovered",
+      "mean_pairs": 4.595833333333333,
+      "mean_runtime_seconds": 1.6384539083333334,
+      "support_known": "Yes",
+      "scope": "Three faults in one column; known row triple and column; full key across four column experiments."
+    },
+    {
+      "approach": "Known-support cross-column DFA (Phase IX)",
+      "trials": 16,
+      "successes": 16,
+      "success_rate_percent": 100.0,
+      "success_criterion": "All affected K10 column groups recovered",
+      "mean_pairs": null,
+      "mean_runtime_seconds": 0.38626040024996655,
+      "support_known": "Yes",
+      "scope": "2+1 and 1+1+1 distributions; only affected groups; not full master key."
+    },
+    {
+      "approach": "Blind three-byte support recovery (Phase XIV)",
+      "trials": 7,
+      "successes": 7,
+      "success_rate_percent": 100.0,
+      "success_criterion": "Unique correct support among 560 hypotheses",
+      "mean_pairs": 5,
+      "mean_runtime_seconds": 4.520871865428489,
+      "support_known": "No",
+      "scope": "3+0+0, 2+1, 1+1+1; support identified; not full master key."
+    },
+    {
+      "approach": "Multi-event blind master-key recovery (Phase XV)",
+      "trials": 1,
+      "successes": 1,
+      "success_rate_percent": 100.0,
+      "success_criterion": "All event supports identified and complete AES-128 master key verified",
+      "mean_pairs": 15,
+      "mean_runtime_seconds": 14.512843190999774,
+      "support_known": "No",
+      "scope": "One end-to-end trial; three events x five pairs; shared key; all four K10 groups recovered."
+    }
+  ],
+  "additional_diagnostics": {
+    "phase3_pairs_to_full_key": {
+      "mean": 2.1,
+      "median": 2.0,
+      "min": 2,
+      "max": 3
+    },
+    "phase3_candidate_reduction": [
+      {
+        "faulty_pairs": "1",
+        "mean_candidates_per_column": "266.4",
+        "median_candidates_per_column": "240",
+        "column_unique_recovery_rate": "0",
+        "full_master_key_recovery_rate": "0",
+        "true_group_retention_rate": "1"
+      },
+      {
+        "faulty_pairs": "2",
+        "mean_candidates_per_column": "1.025",
+        "median_candidates_per_column": "1",
+        "column_unique_recovery_rate": "0.975",
+        "full_master_key_recovery_rate": "0.9",
+        "true_group_retention_rate": "1"
+      },
+      {
+        "faulty_pairs": "3",
+        "mean_candidates_per_column": "1",
+        "median_candidates_per_column": "1",
+        "column_unique_recovery_rate": "1",
+        "full_master_key_recovery_rate": "1",
+        "true_group_retention_rate": "1"
+      },
+      {
+        "faulty_pairs": "4",
+        "mean_candidates_per_column": "1",
+        "median_candidates_per_column": "1",
+        "column_unique_recovery_rate": "1",
+        "full_master_key_recovery_rate": "1",
+        "true_group_retention_rate": "1"
+      },
+      {
+        "faulty_pairs": "5",
+        "mean_candidates_per_column": "1",
+        "median_candidates_per_column": "1",
+        "column_unique_recovery_rate": "1",
+        "full_master_key_recovery_rate": "1",
+        "true_group_retention_rate": "1"
+      },
+      {
+        "faulty_pairs": "6",
+        "mean_candidates_per_column": "1",
+        "median_candidates_per_column": "1",
+        "column_unique_recovery_rate": "1",
+        "full_master_key_recovery_rate": "1",
+        "true_group_retention_rate": "1"
+      },
+      {
+        "faulty_pairs": "8",
+        "mean_candidates_per_column": "1",
+        "median_candidates_per_column": "1",
+        "column_unique_recovery_rate": "1",
+        "full_master_key_recovery_rate": "1",
+        "true_group_retention_rate": "1"
+      },
+      {
+        "faulty_pairs": "10",
+        "mean_candidates_per_column": "1",
+        "median_candidates_per_column": "1",
+        "column_unique_recovery_rate": "1",
+        "full_master_key_recovery_rate": "1",
+        "true_group_retention_rate": "1"
+      },
+      {
+        "faulty_pairs": "12",
+        "mean_candidates_per_column": "1",
+        "median_candidates_per_column": "1",
+        "column_unique_recovery_rate": "1",
+        "full_master_key_recovery_rate": "1",
+        "true_group_retention_rate": "1"
+      }
+    ],
+    "phase7_column_pairs": {
+      "mean": 4.595833333333333,
+      "median": 5.0,
+      "min": 4,
+      "max": 6
+    },
+    "phase7_column_runtime_seconds": {
+      "mean": 0.3906448625,
+      "median": 0.3833245
+    },
+    "phase14_by_distribution": [
+      {
+        "pattern": "3+0+0",
+        "trials": 3,
+        "unique_correct": 3,
+        "unique_recovery_rate": 1.0,
+        "wilson95_low": 0.43849391955098227,
+        "wilson95_high": 1.0,
+        "true_support_survival_rate": 1.0,
+        "mean_viable_supports": 1,
+        "mean_false_positive_supports": 0,
+        "mean_runtime_seconds": 3.206237681000251,
+        "median_runtime_seconds": 3.2097108969992405
+      },
+      {
+        "pattern": "2+1",
+        "trials": 3,
+        "unique_correct": 3,
+        "unique_recovery_rate": 1.0,
+        "wilson95_low": 0.43849391955098227,
+        "wilson95_high": 1.0,
+        "true_support_survival_rate": 1.0,
+        "mean_viable_supports": 1,
+        "mean_false_positive_supports": 0,
+        "mean_runtime_seconds": 5.035678833999555,
+        "median_runtime_seconds": 5.003965313999288
+      },
+      {
+        "pattern": "1+1+1",
+        "trials": 1,
+        "unique_correct": 1,
+        "unique_recovery_rate": 1.0,
+        "wilson95_low": 0.20654329147389294,
+        "wilson95_high": 1.0,
+        "true_support_survival_rate": 1.0,
+        "mean_viable_supports": 1,
+        "mean_false_positive_supports": 0,
+        "mean_runtime_seconds": 6.920353513000009,
+        "median_runtime_seconds": 6.920353513000009
+      }
+    ],
+    "phase15_event_results": [
+      {
+        "event": 1,
+        "pairs": 5,
+        "true_support": "0:0;0:1;0:2",
+        "hypotheses_tested": 560,
+        "viable_supports": 1,
+        "unique_correct_support": 1,
+        "recovered_column_groups": 1,
+        "affected_columns": 1,
+        "groups_match_true_K10": 1,
+        "runtime_seconds": 3.068000889999894,
+        "surviving_supports": "0:0|0:1|0:2"
+      },
+      {
+        "event": 2,
+        "pairs": 5,
+        "true_support": "1:1;1:2;2:0",
+        "hypotheses_tested": 560,
+        "viable_supports": 1,
+        "unique_correct_support": 1,
+        "recovered_column_groups": 2,
+        "affected_columns": 2,
+        "groups_match_true_K10": 1,
+        "runtime_seconds": 4.985541883999758,
+        "surviving_supports": "1:1|1:2|2:0"
+      },
+      {
+        "event": 3,
+        "pairs": 5,
+        "true_support": "0:3;2:2;3:2",
+        "hypotheses_tested": 560,
+        "viable_supports": 1,
+        "unique_correct_support": 1,
+        "recovered_column_groups": 3,
+        "affected_columns": 3,
+        "groups_match_true_K10": 1,
+        "runtime_seconds": 6.456286017999446,
+        "surviving_supports": "0:3|2:2|3:2"
+      }
+    ],
+    "phase15_master_key_verified": true,
+    "phase15_recovered_master_key": "97884e868fcb18b3cfeae7137c649b7e"
+  },
+  "interpretation": [
+    "The conventional single-byte baseline recovered the complete master key in all 30 recorded trials by at most 12 faulty pairs; its aggregate curve reports 90% full-key recovery at two pairs and 100% at three pairs.",
+    "The known-support three-byte same-column implementation recovered the master key in all 120 recorded trials. This is a different, stronger fault-model-specific solver and is not blind support recovery.",
+    "The known-support cross-column experiment recovered affected round-key groups in all 16 trials, but did not claim complete master-key recovery.",
+    "Blind three-byte support recovery uniquely identified the correct support in all 7 Phase XIV trials, but the sample is too small for strong reliability claims.",
+    "Phase XV demonstrates one complete multi-event blind master-key recovery, not a statistically established success rate."
+  ],
+  "comparability_cautions": [
+    "Success criteria differ by experiment; percentages must not be interpreted as a head-to-head benchmark.",
+    "Pair counts differ in meaning: per single fault event, per column, or total across multi-events.",
+    "Runtime figures are implementation- and workload-specific and should not be treated as universal complexity measurements.",
+    "All experiments use software fault injection under the stated AES round-9 model; no physical fault injection is included.",
+    "The Phase XV result has n=1 and is proof-of-execution evidence only."
+  ],
+  "limitations": [
+    "This phase synthesizes existing experiment outputs; it does not create new attack trials.",
+    "No statistical extrapolation beyond the recorded samples is made."
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "phase": "X - optimized blind cross-column support search",
+  "scope": "Exactly three distinct faulty state bytes; 2+1 and 1+1+1 distributions only",
+  "trials": 4,
+  "hypotheses_per_trial": 544,
+  "successful_unique_location_recoveries": 4,
+  "true_support_survived": 4,
+  "runtime_seconds": [
+    4.009,
+    3.6476,
+    4.4549,
+    4.0599
+  ],
+  "mean_runtime_seconds": 4.0428500000000005,
+  "limitations": [
+    "3+0+0 supports are excluded",
+    "No complete 128-bit master-key recovery",
+    "Software fault injection only",
+    "Four exploratory trials, not a statistical evaluation",
+    "Implementation is optimized Python with shared candidate caching and GF multiplication lookup; C++ port remains future work"
+  ]
+}

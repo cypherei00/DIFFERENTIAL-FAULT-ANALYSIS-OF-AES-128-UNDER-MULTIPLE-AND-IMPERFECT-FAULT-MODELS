@@ -1,0 +1,5 @@
+column,fault_rows,unique_group_recovered,pairs_used,candidate_counts,correct_group_retained_all_stages
+0,0-1-2,True,5,16584400|64075|196|2|1,True
+1,0-1-2,True,4,16581008|64202|253|1,True
+2,0-1-2,True,5,16578000|63987|216|2|1,True
+3,0-1-2,True,5,16578928|64182|252|2|1,True

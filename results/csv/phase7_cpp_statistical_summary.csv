@@ -1,0 +1,5 @@
+row_triple,trials,complete_master_key_recoveries,master_key_success_rate,column_recoveries,column_recovery_rate,mean_pairs_per_column,mean_column_runtime_seconds,median_column_runtime_seconds,max_candidate_file_bytes
+0-1-2,30,30,1.0,120,1.0,4.6333,0.388567,0.381694,66363648
+0-1-3,30,30,1.0,120,1.0,4.55,0.389468,0.386224,66584576
+0-2-3,30,30,1.0,120,1.0,4.55,0.395202,0.385275,66527232
+1-2-3,30,30,1.0,120,1.0,4.65,0.389342,0.378823,66366016

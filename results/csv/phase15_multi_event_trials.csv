@@ -1,0 +1,4 @@
+event,pairs,true_support,hypotheses_tested,viable_supports,unique_correct_support,recovered_column_groups,affected_columns,groups_match_true_K10,runtime_seconds,surviving_supports
+1,5,0:0;0:1;0:2,560,1,1,1,1,1,3.068000889999894,0:0|0:1|0:2
+2,5,1:1;1:2;2:0,560,1,1,2,2,1,4.985541883999758,1:1|1:2|2:0
+3,5,0:3;2:2;3:2,560,1,1,3,3,1,6.456286017999446,0:3|2:2|3:2

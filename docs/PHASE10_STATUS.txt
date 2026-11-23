@@ -1,0 +1,18 @@
+PHASE X — BLIND CROSS-COLUMN SUPPORT SEARCH
+
+Status: prototype implemented; exhaustive 544-hypothesis Python run did not complete within the 300-second execution limit.
+
+Scope of prototype:
+- Exactly three distinct faulty AES state bytes.
+- 2+1 distribution: 288 supports.
+- 1+1+1 distribution: 256 supports.
+- Total: 544 support hypotheses.
+- Uses existing per-column one-byte and two-byte DFA candidate constraints.
+
+Not included:
+- 3+0+0 (three faults in one column), which requires the Phase VII three-byte solver integrated into the blind hypothesis engine.
+- Unknown fault count.
+- Full 128-bit master-key recovery.
+- Hardware fault injection.
+
+No success rate, recovery claim, or runtime result is reported because the exhaustive run timed out. The bottleneck is repeatedly generating/intersecting two-byte candidate sets across hundreds of hypotheses in Python. Next engineering step is a C++ batched hypothesis engine that reuses inverse-S-box differential maps across hypotheses and applies early rejection.

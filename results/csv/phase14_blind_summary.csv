@@ -1,0 +1,4 @@
+pattern,trials,unique_correct,unique_recovery_rate,wilson95_low,wilson95_high,true_support_survival_rate,mean_viable_supports,mean_false_positive_supports,mean_runtime_seconds,median_runtime_seconds
+3+0+0,3,3,1.0,0.43849391955098227,1.0,1.0,1,0,3.206237681000251,3.2097108969992405
+2+1,3,3,1.0,0.43849391955098227,1.0,1.0,1,0,5.035678833999555,5.003965313999288
+1+1+1,1,1,1.0,0.20654329147389294,1.0,1.0,1,0,6.920353513000009,6.920353513000009

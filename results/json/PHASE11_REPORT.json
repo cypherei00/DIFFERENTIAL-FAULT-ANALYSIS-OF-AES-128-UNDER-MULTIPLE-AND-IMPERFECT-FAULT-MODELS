@@ -1,0 +1,13 @@
+{
+  "phase": "XI",
+  "scope": "Exhaustive enumeration of exactly-three-byte fault supports across the 16 AES state cells.",
+  "total_supports": 560,
+  "distribution_counts": {
+    "1+1+1": 256,
+    "2+1": 288,
+    "3": 16
+  },
+  "identity": "C(16,3) = 560 = 16 + 288 + 256",
+  "validation": "PASS: every support is unique and all distribution counts match combinatorics.",
+  "important_limitation": "This phase validates and enumerates the complete support space. It does not run blind DFA key-candidate recovery, identify a support from ciphertexts, or recover an AES round key/master key."
+}

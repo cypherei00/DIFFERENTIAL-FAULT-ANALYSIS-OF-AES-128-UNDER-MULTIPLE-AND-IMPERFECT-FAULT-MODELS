@@ -1,0 +1,7 @@
+row_pair,trials,master_key_successes,master_key_success_rate,unique_prefix_observations,prefix_observations,mean_candidates_after_1_pair,mean_candidates_after_2_pairs,mean_candidates_after_3_pairs
+0-1,1,1,1.0,4,11,65536.0,1.75,1.0
+0-2,1,1,1.0,4,9,64256.0,1.5,1.0
+0-3,1,1,1.0,4,10,65000.0,1.75,1.0
+1-2,1,1,1.0,4,8,64628.0,1.0,
+1-3,1,1,1.0,4,11,64972.0,2.5,1.0
+2-3,1,1,1.0,4,8,64904.0,1.0,

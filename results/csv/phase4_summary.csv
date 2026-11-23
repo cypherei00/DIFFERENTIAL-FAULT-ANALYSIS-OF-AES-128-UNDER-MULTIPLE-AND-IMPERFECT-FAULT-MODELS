@@ -1,0 +1,8 @@
+experiment,condition,trials,model_compatible_rate,unique_hypothesis_rate,mean_compatible_hypotheses
+unknown_location,"single byte, any of 16 locations",100,1.0,1.0,1.0
+multiple_faults,"2 faults, different_columns",100,0.0,,0.0
+multiple_faults,"2 faults, same_column",100,0.0,,0.0
+multiple_faults,"4 faults, different_columns",100,0.0,,0.0
+multiple_faults,"4 faults, same_column",100,0.0,,0.0
+multiple_faults,"8 faults, different_columns",100,0.0,,0.0
+multiple_faults,"8 faults, two_columns_4plus4",100,0.0,,0.0

@@ -1,0 +1,60 @@
+{
+  "seed": 20261117,
+  "independent_trials": 30,
+  "hypotheses_per_trial": 16,
+  "total_hypothesis_tests": 480,
+  "ciphertext_pairs_per_trial": 8,
+  "unique_location_recoveries": 30,
+  "observed_success_rate": 1.0,
+  "wilson_95_percent_interval": [
+    0.8865,
+    1.0
+  ],
+  "mean_pairs_used_by_true_hypothesis": 8,
+  "mean_search_seconds_per_trial": 2.3518586666666668,
+  "median_search_seconds_per_trial": 2.350135,
+  "total_hypothesis_runtime_seconds": 70.55575999999999,
+  "configuration_breakdown": [
+    {
+      "row_configuration": "0-1-2",
+      "trials": 9,
+      "unique_location_recoveries": 9,
+      "success_rate": 1.0,
+      "mean_search_seconds": 2.370757777777778
+    },
+    {
+      "row_configuration": "0-1-3",
+      "trials": 5,
+      "unique_location_recoveries": 5,
+      "success_rate": 1.0,
+      "mean_search_seconds": 2.450766
+    },
+    {
+      "row_configuration": "0-2-3",
+      "trials": 9,
+      "unique_location_recoveries": 9,
+      "success_rate": 1.0,
+      "mean_search_seconds": 2.2667333333333333
+    },
+    {
+      "row_configuration": "1-2-3",
+      "trials": 7,
+      "unique_location_recoveries": 7,
+      "success_rate": 1.0,
+      "mean_search_seconds": 2.3663585714285715
+    }
+  ],
+  "column_distribution": {
+    "0": 10,
+    "1": 4,
+    "2": 7,
+    "3": 9
+  },
+  "limitations": [
+    "One three-byte fault cluster in exactly one AES state column per trial.",
+    "Faulted row triple and column hidden from attack and used only for scoring.",
+    "Attack recovers location and unique four-byte round-10 key group; it does not recover full 128-bit master key from one faulted column.",
+    "Software fault injection only; hardware and cross-column fault models not tested.",
+    "Thirty trials are an exploratory statistical evaluation, not proof of universal success."
+  ]
+}

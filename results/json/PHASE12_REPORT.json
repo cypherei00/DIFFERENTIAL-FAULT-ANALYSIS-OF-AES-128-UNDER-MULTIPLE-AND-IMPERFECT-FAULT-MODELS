@@ -1,0 +1,62 @@
+{
+  "phase": "XII",
+  "seed": 2026111701,
+  "test": "3+0+0 known-support integration test",
+  "fault_rows": [
+    0,
+    1,
+    2
+  ],
+  "four_columns_tested": 4,
+  "column_results": [
+    {
+      "column": 0,
+      "fault_rows": "0-1-2",
+      "unique_group_recovered": true,
+      "pairs_used": 5,
+      "candidate_counts": "16584400|64075|196|2|1",
+      "correct_group_retained_all_stages": true
+    },
+    {
+      "column": 1,
+      "fault_rows": "0-1-2",
+      "unique_group_recovered": true,
+      "pairs_used": 4,
+      "candidate_counts": "16581008|64202|253|1",
+      "correct_group_retained_all_stages": true
+    },
+    {
+      "column": 2,
+      "fault_rows": "0-1-2",
+      "unique_group_recovered": true,
+      "pairs_used": 5,
+      "candidate_counts": "16578000|63987|216|2|1",
+      "correct_group_retained_all_stages": true
+    },
+    {
+      "column": 3,
+      "fault_rows": "0-1-2",
+      "unique_group_recovered": true,
+      "pairs_used": 5,
+      "candidate_counts": "16578928|64182|252|2|1",
+      "correct_group_retained_all_stages": true
+    }
+  ],
+  "runtime_seconds": 2.139474590001555,
+  "original_master_key_hex": "86af59c7de6f2cdae2aecbeae6556907",
+  "original_round10_key_hex": "e00998919d7116d051d84742aa500744",
+  "recovered_round10_key_hex": "e00998919d7116d051d84742aa500744",
+  "recovered_master_key_hex": "86af59c7de6f2cdae2aecbeae6556907",
+  "full_master_key_verified": true,
+  "support_space": {
+    "total": 560,
+    "3": 16,
+    "2+1": 288,
+    "1+1+1": 256
+  },
+  "limitations": [
+    "This validates the 3+0+0 per-column solver integration with known support.",
+    "It does not execute a blind search over all 560 supports.",
+    "The blind 560-support search must combine candidate sets for 1-, 2-, and 3-byte column models and is not claimed complete."
+  ]
+}

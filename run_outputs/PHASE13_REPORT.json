@@ -1,0 +1,257 @@
+{
+  "phase": "XIII",
+  "seed": 2026111703,
+  "pair_count": 5,
+  "true_support": "1:0;1:2;2:0",
+  "hypotheses_tested": 560,
+  "viable_hypotheses": 1,
+  "true_support_survived": true,
+  "unique_support_recovery": true,
+  "full_master_key_recovered_and_verified": false,
+  "candidate_generation_and_intersection_seconds": 7.988902200013399,
+  "total_runtime_seconds": 7.991680600098334,
+  "per_model_candidate_counts": {
+    "c0_r0": [
+      0
+    ],
+    "c0_r1": [
+      0
+    ],
+    "c0_r2": [
+      0
+    ],
+    "c0_r3": [
+      0
+    ],
+    "c0_r01": [
+      0
+    ],
+    "c0_r02": [
+      0
+    ],
+    "c0_r03": [
+      0
+    ],
+    "c0_r12": [
+      0
+    ],
+    "c0_r13": [
+      0
+    ],
+    "c0_r23": [
+      0
+    ],
+    "c0_r012": [
+      0,
+      0
+    ],
+    "c0_r013": [
+      0,
+      0
+    ],
+    "c0_r023": [
+      0,
+      0
+    ],
+    "c0_r123": [
+      0,
+      0
+    ],
+    "c1_r0": [
+      240,
+      0
+    ],
+    "c1_r1": [
+      240,
+      0
+    ],
+    "c1_r2": [
+      240,
+      0
+    ],
+    "c1_r3": [
+      240,
+      0
+    ],
+    "c1_r01": [
+      64208,
+      2,
+      0
+    ],
+    "c1_r02": [
+      64784,
+      2,
+      1,
+      1,
+      1
+    ],
+    "c1_r03": [
+      65056,
+      4,
+      0
+    ],
+    "c1_r12": [
+      65184,
+      1,
+      0
+    ],
+    "c1_r13": [
+      65104,
+      1,
+      0
+    ],
+    "c1_r23": [
+      65600,
+      0
+    ],
+    "c1_r012": [
+      16583264,
+      63861,
+      250,
+      0
+    ],
+    "c1_r013": [
+      16590960,
+      63727,
+      229,
+      1,
+      0
+    ],
+    "c1_r023": [
+      16575856,
+      63596,
+      227,
+      0
+    ],
+    "c1_r123": [
+      16583248,
+      63943,
+      236,
+      1,
+      0
+    ],
+    "c2_r0": [
+      240,
+      1,
+      1,
+      1,
+      1
+    ],
+    "c2_r1": [
+      240,
+      0
+    ],
+    "c2_r2": [
+      240,
+      0
+    ],
+    "c2_r3": [
+      240,
+      0
+    ],
+    "c2_r01": [
+      65120,
+      0
+    ],
+    "c2_r02": [
+      66224,
+      2,
+      0
+    ],
+    "c2_r03": [
+      64896,
+      0
+    ],
+    "c2_r12": [
+      65120,
+      0
+    ],
+    "c2_r13": [
+      64960,
+      3,
+      0
+    ],
+    "c2_r23": [
+      64496,
+      1,
+      0
+    ],
+    "c2_r012": [
+      16586416,
+      64641,
+      251,
+      0
+    ],
+    "c2_r013": [
+      16583120,
+      64060,
+      233,
+      1,
+      0
+    ],
+    "c2_r023": [
+      16583600,
+      63858,
+      265,
+      1,
+      0
+    ],
+    "c2_r123": [
+      16586400,
+      64075,
+      208,
+      0
+    ],
+    "c3_r0": [
+      0
+    ],
+    "c3_r1": [
+      0
+    ],
+    "c3_r2": [
+      0
+    ],
+    "c3_r3": [
+      0
+    ],
+    "c3_r01": [
+      0
+    ],
+    "c3_r02": [
+      0
+    ],
+    "c3_r03": [
+      0
+    ],
+    "c3_r12": [
+      0
+    ],
+    "c3_r13": [
+      0
+    ],
+    "c3_r23": [
+      0
+    ],
+    "c3_r012": [
+      0,
+      0
+    ],
+    "c3_r013": [
+      0,
+      0
+    ],
+    "c3_r023": [
+      0,
+      0
+    ],
+    "c3_r123": [
+      0,
+      0
+    ]
+  },
+  "limitations": [
+    "Single reproducible software-injection trial.",
+    "Blind support decision uses nonempty per-column K10 candidate intersections.",
+    "Full 128-bit key recovery is only possible if support is unique and all 16 K10 bytes are covered; three faults affect at most three columns, so the attacked data alone does not determine the fourth K10 column."
+  ]
+}

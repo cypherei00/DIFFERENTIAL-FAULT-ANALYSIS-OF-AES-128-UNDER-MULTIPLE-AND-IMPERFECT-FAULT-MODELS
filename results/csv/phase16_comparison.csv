@@ -1,0 +1,6 @@
+approach,trials,successes,success_rate_percent,success_criterion,mean_pairs,mean_runtime_seconds,support_known,scope
+Conventional single-byte DFA (Phase III),30,30,100.0,Full AES-128 master key recovered by <=12 pairs,2.1,0.34476728966666664,Yes,Controlled single-byte faults; row-0/column support known; full key.
+Known-support three-byte DFA (Phase VII),120,120,100.0,Full AES-128 master key recovered,4.595833333333333,1.6384539083333334,Yes,Three faults in one column; known row triple and column; full key across four column experiments.
+Known-support cross-column DFA (Phase IX),16,16,100.0,All affected K10 column groups recovered,,0.38626040024996655,Yes,2+1 and 1+1+1 distributions; only affected groups; not full master key.
+Blind three-byte support recovery (Phase XIV),7,7,100.0,Unique correct support among 560 hypotheses,5,4.520871865428489,No,"3+0+0, 2+1, 1+1+1; support identified; not full master key."
+Multi-event blind master-key recovery (Phase XV),1,1,100.0,All event supports identified and complete AES-128 master key verified,15,14.512843190999774,No,One end-to-end trial; three events x five pairs; shared key; all four K10 groups recovered.

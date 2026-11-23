@@ -1,0 +1,5 @@
+distribution,trial,seed,true_support,hypotheses_tested,viable_hypotheses,true_support_survived,unique_location_recovery,candidate_generation_seconds,total_runtime_seconds
+2+1,1,20261117,0:1;0:3;2:1,544,1,True,True,3.8341,4.009
+2+1,2,20261118,0:1;0:2;3:0,544,1,True,True,3.5333,3.6476
+1+1+1,1,20262117,0:1;2:0;3:1,544,1,True,True,4.2443,4.4549
+1+1+1,2,20262118,0:1;2:0;3:1,544,1,True,True,3.8445,4.0599

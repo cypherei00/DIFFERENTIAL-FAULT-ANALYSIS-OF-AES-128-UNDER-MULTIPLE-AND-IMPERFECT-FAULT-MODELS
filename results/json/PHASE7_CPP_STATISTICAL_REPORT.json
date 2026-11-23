@@ -1,0 +1,93 @@
+{
+  "trials_per_row_triple": 30,
+  "total_trials": 120,
+  "columns_per_trial": 4,
+  "total_column_experiments": 480,
+  "complete_trial_recoveries": 120,
+  "complete_trial_success_rate": 1.0,
+  "unique_column_recoveries": 480,
+  "unique_column_recovery_rate": 1.0,
+  "mean_pairs_per_column": 4.595833333333333,
+  "mean_column_runtime_seconds": 0.3906448625,
+  "median_column_runtime_seconds": 0.3833245,
+  "mean_trial_runtime_seconds": 1.6384539083333334,
+  "max_candidate_file_bytes": 66584576,
+  "candidate_counts_mean_by_pair": {
+    "1": {
+      "n": 480,
+      "mean": 16580975.666666666
+    },
+    "2": {
+      "n": 480,
+      "mean": 64004.93958333333
+    },
+    "3": {
+      "n": 480,
+      "mean": 248.17916666666667
+    },
+    "4": {
+      "n": 480,
+      "mean": 1.9041666666666666
+    },
+    "5": {
+      "n": 284,
+      "mean": 1.0070422535211268
+    },
+    "6": {
+      "n": 2,
+      "mean": 1
+    }
+  },
+  "per_row_triple": [
+    {
+      "row_triple": "0-1-2",
+      "trials": "30",
+      "complete_master_key_recoveries": "30",
+      "master_key_success_rate": "1.0",
+      "column_recoveries": "120",
+      "column_recovery_rate": "1.0",
+      "mean_pairs_per_column": "4.6333",
+      "mean_column_runtime_seconds": "0.388567",
+      "median_column_runtime_seconds": "0.381694",
+      "max_candidate_file_bytes": "66363648"
+    },
+    {
+      "row_triple": "0-1-3",
+      "trials": "30",
+      "complete_master_key_recoveries": "30",
+      "master_key_success_rate": "1.0",
+      "column_recoveries": "120",
+      "column_recovery_rate": "1.0",
+      "mean_pairs_per_column": "4.55",
+      "mean_column_runtime_seconds": "0.389468",
+      "median_column_runtime_seconds": "0.386224",
+      "max_candidate_file_bytes": "66584576"
+    },
+    {
+      "row_triple": "0-2-3",
+      "trials": "30",
+      "complete_master_key_recoveries": "30",
+      "master_key_success_rate": "1.0",
+      "column_recoveries": "120",
+      "column_recovery_rate": "1.0",
+      "mean_pairs_per_column": "4.55",
+      "mean_column_runtime_seconds": "0.395202",
+      "median_column_runtime_seconds": "0.385275",
+      "max_candidate_file_bytes": "66527232"
+    },
+    {
+      "row_triple": "1-2-3",
+      "trials": "30",
+      "complete_master_key_recoveries": "30",
+      "master_key_success_rate": "1.0",
+      "column_recoveries": "120",
+      "column_recovery_rate": "1.0",
+      "mean_pairs_per_column": "4.65",
+      "mean_column_runtime_seconds": "0.389342",
+      "median_column_runtime_seconds": "0.378823",
+      "max_candidate_file_bytes": "66366016"
+    }
+  ],
+  "master_key_check": "For each trial, all four unique column candidates were checked against the corresponding ground-truth round-10 key bytes; AES-128 inverse key expansion was then run and matched the original master key in all 120 trials.",
+  "threat_model_limitations": "Faulted row triple and column are known; three nonzero XOR faults occur in one column at round 9 after ShiftRows before MixColumns; magnitudes are unknown and independently randomized. Unknown locations and multi-column faults were not tested."
+}
